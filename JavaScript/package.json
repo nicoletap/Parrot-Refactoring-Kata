@@ -3,12 +3,16 @@
   "version": "0.0.1",
   "description": "parrot refactoring kata",
   "main": "src/parrot.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "jest"
   },
   "author": "Attila Kerekes",
   "license": "MIT",
   "devDependencies": {
+    "approvals": "^4.1.1",
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.0.0",
     "babel-preset-es2015": "^6.24.1",
