@@ -54,7 +54,8 @@ fi
 ALL_FAILING_TESTS="$NOT_STAGED_STATUS"
 
 GIT_FILES=$(git ls-tree -r --name-only HEAD $ROOT_DOC)
-PATH_FILES=$(find . -type f -path "./$ROOT_DOC/*" -printf '%P\n')
+PATH_FILES=$(find ./$ROOT_DOC -type f -path "./$ROOT_DOC/*" -printf "$ROOT_DOC/%P\n")
+
 ALL_GIT_FILES=$(echo "${GIT_FILES}${NEW_LINE}${PATH_FILES}"|sort|uniq)
 
 NB_FAILURES=0
