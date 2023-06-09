@@ -1,12 +1,16 @@
 {
    "name": "parrot-refactoring-kata",
    "version": "0.0.1",
+   "directories": {
+    "doc": "docs"
+  },
    "scripts": {
      "test": "jest",
      "build": "tsc",
      "test:coverage": "jest --coverage"
    },
    "devDependencies": {
+     "approvals": "^4.1.1",
      "@types/jest": "^27.0.0",
      "@types/node": "^10.0.0",
      "jest": "^27.0.0",
